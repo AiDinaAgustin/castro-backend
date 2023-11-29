@@ -19,3 +19,5 @@ use App\Http\Controllers\PodcastController;
 // });
 
 Route::get('/', [PodcastController::class, 'index']);
+
+
