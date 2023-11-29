@@ -15,7 +15,7 @@
         <rect x="29.1666" y="6.25" width="12.5" height="37.5" rx="2" fill="white"/>
       </svg>
       <!-- title -->
-      <p>{{ $podcast["title"] }}</p>
+      <p>{{ $podcast->title }}</p>
       <!-- durations -->
       <p>1 Jam, 20 Menit</p>
     </div>
@@ -50,7 +50,10 @@
   <!-- details -->
   <div class="text-gray-400 font-bold mb-10">
     <p class="text-lg mb-4">16 Desember 2023</p>
-    <p class="text-xl text-white mb-6">{{ $podcast["body"] }}</p>
+    <div class="text-xl text-white mb-6">
+      {{ $podcast->body }}
+    </div>
+    {{-- <p class="text-xl text-white mb-6">{{ $podcast->body }}</p> --}}
     <div class="genre">
       <ul class="flex justify-start items-center gap-3">
         <li class="bg-zinc-700 py-2 px-4 rounded-full">Horror</li>
@@ -64,7 +67,7 @@
       <img class="w-[65px]" src="assets/img/horor2.jpg" alt="">
       <div class="flex flex-col items-start text-white">
         <!-- title -->
-        <p>{{ $podcast["title"] }}</p>
+        <p>{{ $podcast->title }}</p>
         <!-- durations -->
         <p>1 Jam, 20 Menit</p>
       </div>
