@@ -20,4 +20,4 @@ use App\Http\Controllers\PodcastController;
 
 Route::get('/', [PodcastController::class, 'index']);
 
-
+Route::get('/{slug}', [PodcastController::class, 'show']);

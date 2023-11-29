@@ -61,7 +61,7 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <a href="details.html">
+              <a href="/{{ $podcast["id"] }}">
                 <div class="cover-music bg-zinc-800 w-40 h-56 rounded-md p-2">
                   <div class="relative w-36">
                     <img class="w-full" src="assets/img/page1.jpg" alt="your music">

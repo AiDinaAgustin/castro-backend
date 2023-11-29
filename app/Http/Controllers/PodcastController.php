@@ -9,7 +9,7 @@ class PodcastController extends Controller
 {
     public function index()
     {
-        return view('home', [
+        return view('podcasts', [
             "title" => "Podcasts",
             "podcasts" => Podcast::all()
         ]);
