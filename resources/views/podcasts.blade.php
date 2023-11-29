@@ -68,7 +68,7 @@
                     </div>
                     <div>
                       <h4 class="truncate text-white text-base mb-2">{{ $podcast["title"] }}</h4>
-                      <p class="truncate text-slate-400 text-xs">{{ $podcast["body"] }}</p>
+                      <h6 class="truncate text-slate-400 text-xs">{!! $podcast->excerpt !!}</h6>
                     </div>
                   </div>
                 </a>

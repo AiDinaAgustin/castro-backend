@@ -51,7 +51,7 @@
   <div class="text-gray-400 font-bold mb-10">
     <p class="text-lg mb-4">16 Desember 2023</p>
     <div class="text-xl text-white mb-6">
-      {{ $podcast->body }}
+      {!! $podcast->body !!}
     </div>
     {{-- <p class="text-xl text-white mb-6">{{ $podcast->body }}</p> --}}
     <div class="genre">
