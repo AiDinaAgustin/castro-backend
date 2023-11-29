@@ -42,3 +42,51 @@ main::-webkit-scrollbar {
     color: white;
     border-bottom: 2px solid #F9D80F;
   }
+
+  main::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  main::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  main::-webkit-scrollbar-thumb {
+    background-color: rgba(203, 213, 225, 0.5);
+    border: none;
+  }
+  .play-btn {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9999px;
+    background-color: rgb(250 204 21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity ease-out 0.2s;
+  }
+  .cover-music:hover .play-btn {
+    opacity: 1;
+    bottom: 10px;
+  }
+  .show {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 40;
+    transition: width 0.4s ease-in;
+  }
+
+  .cover {
+    background-image: url(assets/img/horor2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    filter: blur(10px);
+  }
