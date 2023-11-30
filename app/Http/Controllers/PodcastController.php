@@ -15,11 +15,11 @@ class PodcastController extends Controller
         ]);
     }
 
-    public function show($slug)
+    public function show(Podcast $podcast)
     {
         return view('podcast', [
             "title" => "Single Podcast",
-            "podcast" => Podcast::find($slug)
+            "podcast" => $podcast
         ]);
     }
 }
