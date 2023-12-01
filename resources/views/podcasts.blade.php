@@ -56,7 +56,7 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              @foreach ($podcasts as $podcast)
+              @foreach ($oldestPodcasts as $podcast)
               <div class="swiper-slide">
                 <a href="/{{ $podcast->slug }}">
                   <div class="cover-music bg-zinc-800 w-40 h-56 rounded-md p-2">
@@ -92,7 +92,7 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           {{-- Bikin foreach disini --}}
-          @foreach ($podcasts as $podcast)
+          @foreach ($latestPodcasts as $podcast)
           <div class="swiper-slide">
             <a href="/{{ $podcast->slug }}">
               <div class="cover-music bg-zinc-800 w-40 h-56 rounded-md p-2">

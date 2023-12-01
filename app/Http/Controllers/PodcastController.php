@@ -9,10 +9,13 @@ class PodcastController extends Controller
 {
     public function index()
     {
+        $latestPodcasts = Podcast::latest()->get();
+        $oldestPodcasts = Podcast::oldest()->get();
+    
         return view('podcasts', [
             "title" => "Podcasts",
-            // "podcasts" => Podcast::all()
-            "podcasts" => Podcast::latest()->get()
+            "latestPodcasts" => $latestPodcasts,
+            "oldestPodcasts" => $oldestPodcasts,
         ]);
     }
 

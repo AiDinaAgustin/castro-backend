@@ -39,6 +39,6 @@ class DatabaseSeeder extends Seeder
             'slug' => 'thriller',
         ]);
 
-        Podcast::factory(10)->create();
+        Podcast::factory(1)->create();
     }
 }
