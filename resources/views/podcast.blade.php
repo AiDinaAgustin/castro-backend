@@ -62,13 +62,14 @@
     </div>
   </div>
   <!-- Player Music  -->
-  <div class="player w-full h-16 flex items-center justify-between px-4 absolute bg-zinc-700 bottom-5">
+  <div class="player w-full h-20 flex items-center justify-between px-4 absolute bg-zinc-700 bottom-5">
     <div class="flex gap-x-2">
       <img class="w-[65px]" src="assets/img/horor2.jpg" alt="">
       <div class="flex flex-col items-start text-white">
         <!-- title -->
         <p>{{ $podcast->title }}</p>
         <!-- durations -->
+        <p>{{ $podcast->user->name }}</p>
         <p>1 Jam, 20 Menit</p>
       </div>
     </div>

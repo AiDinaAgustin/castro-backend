@@ -11,7 +11,8 @@ class PodcastController extends Controller
     {
         return view('podcasts', [
             "title" => "Podcasts",
-            "podcasts" => Podcast::all()
+            // "podcasts" => Podcast::all()
+            "podcasts" => Podcast::latest()->get()
         ]);
     }
 
