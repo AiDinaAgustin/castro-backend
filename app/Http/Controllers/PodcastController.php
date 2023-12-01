@@ -19,13 +19,6 @@ class PodcastController extends Controller
         ]);
     }
 
-    public function terbaru(){
-        return view('podcasts', [
-            "title" => "Podcasts",
-            "pod" => Podcast::latest()->get()
-        ]);
-    }
-
     public function show(Podcast $podcast)
     {
         return view('podcast', [

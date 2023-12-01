@@ -1,6 +1,8 @@
 <?php
 
+use Clockwork\Storage\Search;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SearchController;
 use App\Http\Controllers\PodcastController;
 
 /*
@@ -18,6 +20,16 @@ use App\Http\Controllers\PodcastController;
 //     return view('home');
 // });
 
-Route::get('/', [PodcastController::class, 'index']);
+Route::get('/live', function () {
+    return view('live');
+});
+
+Route::get('/cari', [SearchController::class, 'index']);
 
 Route::get('/{podcast:slug}', [PodcastController::class, 'show']);
+
+Route::get('/', [PodcastController::class, 'index']);
+
+
+
+

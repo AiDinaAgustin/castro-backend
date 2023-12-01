@@ -9,7 +9,7 @@
           </span>
         </li>
       </a>
-      <a href="/search">
+      <a href="/cari">
         <li class="flex items-center gap-3">
           <img src="assets/img/Search.png" alt="" width="35px">
           <span class="hidden md:block text-2xl">
