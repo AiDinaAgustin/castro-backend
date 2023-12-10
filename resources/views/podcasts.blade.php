@@ -68,6 +68,8 @@
                     </div>
                     <div>
                       <h4 class="truncate text-white text-base mb-2">{{ $podcast["title"] }}</h4>
+                      {{-- tambahkan untuk kategori --}}
+                      <h6 class="truncate text-slate-400 text-xs">{{ $podcast->category->name }}</h6>
                       <h6 class="truncate text-slate-400 text-xs">{!! $podcast->excerpt !!}</h6>
                     </div>
                   </div>

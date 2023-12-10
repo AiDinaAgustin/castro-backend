@@ -24,10 +24,12 @@
             <h3 class="text-2xl text-white font-bold mb-3">Browse All</h3>
             <div class="flex flex-wrap gap-4 text-xl text-white font-bold">
 
-              <div class="relative overflow-hidden bg-pink-600 w-40 h-40 rounded-lg p-2">
-                <p class="text-white">Supra natural</p>
-                <img class="absolute -rotate-45 -bottom-5 right-0" src="assets/img/page1.jpg" alt="your music" width="80px">
-              </div>
+              <a href="/?category={{ $podcast->category->slug }}">
+                <div class="relative overflow-hidden bg-pink-600 w-40 h-40 rounded-lg p-2">
+                    <p class="text-white">Supra natural</p>
+                    <img class="absolute -rotate-45 -bottom-5 right-0" src="assets/img/page1.jpg" alt="your music" width="80px">
+                  </div>
+              </a>
         
               <div class="relative overflow-hidden bg-blue-600 w-40 h-40 rounded-lg p-2">
                 <p class="text-white">Thriler</p>

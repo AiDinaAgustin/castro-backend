@@ -34,12 +34,12 @@ Route::get('/', [PodcastController::class, 'index']);
 
 Route::get('/categories', [CategoryController::class, 'index']);
 
-Route::get('categories/{category:slug}', function(Category $category){
-    return view('cari',[
-        "title" => "Post By Category : $category->name",
-        "podcasts" => $category->podcasts->load('category', 'user')
-    ]);
-});
+// Route::get('categories/{category:slug}', function(Category $category){
+//     return view('cari',[
+//         "title" => "Post By Category : $category->name",
+//         "podcasts" => $category->podcasts->load('category', 'user')
+//     ]);
+// });
 
 
 
