@@ -2,8 +2,10 @@
 
 use Clockwork\Storage\Search;
 use Illuminate\Support\Facades\Route;
+use App\Models\Category;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\PodcastController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +31,15 @@ Route::get('/cari', [SearchController::class, 'index']);
 Route::get('/{podcast:slug}', [PodcastController::class, 'show']);
 
 Route::get('/', [PodcastController::class, 'index']);
+
+Route::get('/categories', [CategoryController::class, 'index']);
+
+Route::get('categories/{category:slug}', function(Category $category){
+    return view('cari',[
+        "title" => "Post By Category : $category->name",
+        "podcasts" => $category->podcasts->load('category', 'user')
+    ]);
+});
 
 
 
