@@ -26,7 +26,7 @@ Route::get('/live', function () {
     return view('live');
 });
 
-Route::get('/cari', [SearchController::class, 'index']);
+Route::get('/cari', [CategoryController::class, 'index']);
 
 Route::get('/{podcast:slug}', [PodcastController::class, 'show']);
 

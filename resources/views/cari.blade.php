@@ -24,14 +24,16 @@
             <h3 class="text-2xl text-white font-bold mb-3">Browse All</h3>
             <div class="flex flex-wrap gap-4 text-xl text-white font-bold">
 
-              <a href="/?category={{ $podcast->category->slug }}">
+              @foreach ($categories as $category)
+              <a href="">
                 <div class="relative overflow-hidden bg-pink-600 w-40 h-40 rounded-lg p-2">
-                    <p class="text-white">Supra natural</p>
+                    <p class="text-white">{{ $category->name }}</p>
                     <img class="absolute -rotate-45 -bottom-5 right-0" src="assets/img/page1.jpg" alt="your music" width="80px">
                   </div>
               </a>
+              @endforeach
         
-              <div class="relative overflow-hidden bg-blue-600 w-40 h-40 rounded-lg p-2">
+              {{-- <div class="relative overflow-hidden bg-blue-600 w-40 h-40 rounded-lg p-2">
                 <p class="text-white">Thriler</p>
                 <img class="absolute -rotate-45 -bottom-5 right-0" src="assets/img/page2.jpg" alt="your podcast" width="80px">
               </div>
@@ -49,7 +51,7 @@
               <div class="relative overflow-hidden bg-purple-600 w-40 h-40 rounded-lg p-2">
                 <p class="text-white">Nadia omara</p>
                 <img class="absolute -rotate-45 -bottom-5 right-0" src="assets/img/page4.jpg" alt="your podcast" width="80px">
-              </div>
+              </div> --}}
 
             </div>
           </div>

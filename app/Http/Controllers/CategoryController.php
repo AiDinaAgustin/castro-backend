@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class CategoryController extends Controller
 {
     public function index(){
-        return view('categories',[
+        return view('cari',[
             "title" => "Post Categories",
             "active" => "categories",
             "categories" => Category::all()
