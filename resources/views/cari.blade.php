@@ -25,7 +25,7 @@
             <div class="flex flex-wrap gap-4 text-xl text-white font-bold">
 
               @foreach ($categories as $category)
-              <a href="">
+              <a href="/cari/{{ $category->slug }}">
                 <div class="relative overflow-hidden bg-pink-600 w-40 h-40 rounded-lg p-2">
                     <p class="text-white">{{ $category->name }}</p>
                     <img class="absolute -rotate-45 -bottom-5 right-0" src="assets/img/page1.jpg" alt="your music" width="80px">
