@@ -1,1 +1,1 @@
-<h1>Ini Dina</h1>
+@extends('layouts.layout')

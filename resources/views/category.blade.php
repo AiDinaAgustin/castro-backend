@@ -4,7 +4,7 @@
 <main class="w-full min-h-screen overflow-x-hidden">
     <!-- Acaramu -->
     <div class="mb-4">
-        <h3 class="text-2xl text-white font-bold mb-3">Podcast Terbaru</h3>
+        <h3 class="text-2xl text-white font-bold mb-3">{{ $category }}</h3>
         <!-- Slider main container -->
         <div class="swiper">
           <!-- Additional required wrapper -->
