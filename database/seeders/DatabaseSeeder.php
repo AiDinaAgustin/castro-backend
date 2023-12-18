@@ -22,23 +22,23 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        User::factory(3)->create();
+        // User::factory(3)->create();
 
-        Category::create([
-            'name' => 'Misteri',
-            'slug' => 'misteri',
-        ]);
+        // Category::create([
+        //     'name' => 'Misteri',
+        //     'slug' => 'misteri',
+        // ]);
 
-        Category::create([
-            'name' => 'Supranatural',
-            'slug' => 'supranatural',
-        ]);
+        // Category::create([
+        //     'name' => 'Supranatural',
+        //     'slug' => 'supranatural',
+        // ]);
 
-        Category::create([
-            'name' => 'Thriller',
-            'slug' => 'thriller',
-        ]);
+        // Category::create([
+        //     'name' => 'Thriller',
+        //     'slug' => 'thriller',
+        // ]);
 
-        Podcast::factory(1)->create();
+        Podcast::factory(10)->create();
     }
 }
